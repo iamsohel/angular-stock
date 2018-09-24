@@ -1,0 +1,69 @@
+<app-header></app-header>
+<section class="linkpage-banner">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-5 col-md-5 col-sm-6 col-8">
+        <div class="linkepage-title full100">
+          <h4>Profile</h4>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- US Market section -->
+<section class="linkpage-content relative pb-5 pt-5">
+  <div class="container-fluid">
+    <div class="row">
+      <!-- profile left side -->
+      <div class="col-lg-3 col-md-4">
+        <div class="profile-box w-100 shadow">
+          <div class="profile-pic mt-4">
+            <img class="mx-auto d-block rounded-circle" src="./assets/img/bg3.jpeg" />
+          </div>
+          <div class="profile-ld">
+            <h4 class="text-center mt-3 mb-3">Leaping logic</h4>
+
+            <ul class="profile-l-menu">
+              <li>
+                <a routerLink="/profile/news-feed">
+                  <i class="fa fa-newspaper"></i> News Feed</a>
+              </li>
+              <li>
+                <a routerLink="/profile/private-post">
+                  <i class="fa fa-comments"></i> Private Post</a>
+              </li>
+              <li>
+                <a href="simulation.html">
+                  <i class="fa  fa-cog"></i> Simulation</a>
+              </li>
+              <li>
+                <a href="settings.html">
+                  <i class="fa fa-cogs"></i> Settings</a>
+              </li>
+              <li>
+                <a href="alerts.html">
+                  <i class="fa fa-bell"></i> Alerts</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="profile-watchlist w-100 shadow text-center mt-4 mb-4">
+          <h5 class="pb-2">Watch list</h5>
+          <div class="sector-linebar full100 mb-3"></div>
+          <img src="./assets/img/icon-watchlist.png" alt="watch img" />
+          <h4>Your Watchlist</h4>
+          <p>
+            Add to your watchlist for easy access to your favorite stocks
+          </p>
+        </div>
+      </div>
+
+      <div class="col-lg-8 col-md-12 mb-4">
+        <router-outlet></router-outlet>
+      </div>
+      
+    </div>
+  </div>
+</section>

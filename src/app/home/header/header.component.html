@@ -1,0 +1,85 @@
+<header class="header relative">
+  <div class="container">
+    <div class="row">
+      <!--logo area -->
+      <div class="col-md-3 linkpagelogo-area">
+        <a (click)="navigate('')">
+          <img src="./assets/img/logo.svg" alt="logo img" />
+        </a>
+      </div>
+      <div class="col-md-3 logo-fixed">
+        <a (click)="navigate('')">
+          <img src="./assets/img/logo-white.png" alt="logo img" />
+        </a>
+      </div>
+      <!-- menu area -->
+      <div class="col-md-9 col-sm-12">
+        <div class="menu-area linkpage-manu-area">
+          <a class="header-search m-search">
+            <i class="fa fa-search"></i>
+          </a>
+          <a class="mobile-toggle">
+            <i class="fa fa-bars"></i>
+          </a>
+          <nav class="menu page-menu pull-right full100">
+            <ul>
+              <li><a (click)="navigate('forex')" >Forex</a>|</li>
+              <li><a (click)="navigate('bonds')" >Bonds</a>|</li>
+              <li><a (click)="navigate('forex')" >US Market</a>|</li>
+              <li><a (click)="navigate('jamaica-market')" >Jam Market</a>|</li>
+              <li>
+                <a href="#">Explore <span class="arrow-down"></span>
+                </a>|
+                <ul>
+                  <li><a (click)="navigate('login')">Initial Public Offering</a></li>
+                  <li><a  (click)="navigate('login')">Research</a></li>
+                </ul>
+              </li>
+              <li class="h-search">
+                <a class="header-search">
+                  <i class="fa fa-search"></i>
+                </a>
+              </li>
+            </ul>
+          </nav>
+          <!-- header search bar -->
+            <div class="search-togglebody pg-search">
+              <div class="traingle-user"></div>
+              <div class="hs-body">
+                <form class="search" method="post" action="index.html" >
+                   <input type="search" name="q" placeholder="Search here...." />
+                   <ul class="results">
+                     <li>
+                       <a href="#">
+                         <div class="search-left">
+                           <span>alto</span>
+                         </div>
+                         <div class="search-content">
+                           <h4> Ames National Corporation </h4>
+                           <span> Nasdaq </span>
+                         </div>
+                       </a>
+                     </li>
+                     <li>
+                       <a href="#">
+                         <div class="search-left">
+                           <span>alto</span>
+                         </div>
+                         <div class="search-content">
+                           <h4> Ames National Corporation </h4>
+                           <span> Nasdaq </span>
+                         </div>
+                       </a>
+                     </li>
+                   </ul>
+                   <button class="search-btn" type="button"><i class="fa fa-search"></i></button>
+                 </form>
+              </div>
+            </div>
+          <!-- menu bottom linebar -->	
+          <div class="menulinebar full100"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
